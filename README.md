@@ -6,14 +6,14 @@ Yi Ding, Neethu Robinson, Qiuhao Zeng, Cuntai Guan, "LGGNet: Learning from Local
 It is a neurologically inspired graph neural network to learn local-global-graph representations from Electroencephalography (EEG) for a Brain-Computer Interface (BCI).
 # Network structure of LGG
 <p align="center">
-<img src="https://github.com/yi-ding-cs/graphs/files/8332174/Github-LGG-v3.3-v3.pdf" width=800 align=center>
+<img src="https://user-images.githubusercontent.com/83038743/159679243-e2687826-2468-4114-b482-b8fd8ca2f7ec.png" width=800 align=center>
 </p>
 
 <p align="center">
  Fig.1 LGG structure
 </p>
 
-Structure of LGGNet. LGGNet has three main functional blocks, the temporal learning block, the graph building block, and the graph learning block. The temporal convolutional layer is shown in the temporal learning block (a). Building the local-global graphs of EEG using the attentively fused temporal representations is illustrated in the graph building block (b). The local and global graph-filtering layers are shown in the graph learning block (c). The temporal convolutional layer aims to learn dynamic temporal representations from EEG directly instead of human extracted features. The kernel-level attentive fusion layer will fuse the information learned by different temporal kernels to increase the learning capacity of LGGNet. The local graph-filtering layer learns the brain activities within each local region. Then the global graph-filtering layer with a trainable adjacency matrix will be applied to learn complex relations among different local regions. Four local graphs are shown in the figure for illustration purposes only. To know more about the detailed local-global-graph definitions please refer to our paper.
+LGGNet has three main functional blocks, the temporal learning block, the graph building block, and the graph learning block. The temporal convolutional layer is shown in the temporal learning block (a). Building the local-global graphs of EEG using the attentively fused temporal representations is illustrated in the graph building block (b). The local and global graph-filtering layers are shown in the graph learning block (c). The temporal convolutional layer aims to learn dynamic temporal representations from EEG directly instead of human extracted features. The kernel-level attentive fusion layer will fuse the information learned by different temporal kernels to increase the learning capacity of LGGNet. The local graph-filtering layer learns the brain activities within each local region. Then the global graph-filtering layer with a trainable adjacency matrix will be applied to learn complex relations among different local regions. Four local graphs are shown in the figure for illustration purposes only. To know more about the detailed local-global-graph definitions please refer to our paper.
 # Prepare the python virtual environment
 Please create an anaconda virtual environment by:
 
