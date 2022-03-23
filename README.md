@@ -6,7 +6,7 @@ Yi Ding, Neethu Robinson, Qiuhao Zeng, Cuntai Guan, "LGGNet: Learning from Local
 It is a neurologically inspired graph neural network to learn local-global-graph representations from Electroencephalography (EEG) for a Brain-Computer Interface (BCI).
 # Network structure of LGG
 <p align="center">
-<img src="https://user-images.githubusercontent.com/83038743/117390749-516fe000-af21-11eb-99a8-26d1e6055010.png" width=800 align=center>
+<img src="https://github.com/yi-ding-cs/graphs/files/8332174/Github-LGG-v3.3-v3.pdf" width=800 align=center>
 </p>
 
 <p align="center">
