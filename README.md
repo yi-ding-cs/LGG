@@ -28,17 +28,21 @@ Install the requirements by:
 > $ pip3 install -r requirements.txt
 
 # Run the code
-Please download the DEAP dataset at [website](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/). Please place the "data_preprocessed_python" folder at the same location of the script. To run the code for arousal dimension, please type the following command in terminal:
+Please download the DEAP dataset at [website](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/). Please place the "data_preprocessed_python" folder at the same location of the script. To run the code for emotion (valence) classification, please type the following command in terminal:
 
-> $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'V'
+> $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'V' --graph-type 'gen'
 
-To run the experiments for emotion(valance) please set the --label-type 'V'; for preference(liking) please set the --label-type 'L'. The results will be saved into "result_DEAP.txt" located at './save/result/'. 
+To run the code for preference (liking) classification, please type the following command in terminal:
+
+> $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'L' --graph-type 'hem'
+
+The results will be saved into "result_DEAP.txt" located at './save/result/'. 
 
 # Reproduce the results
 We highly suggest to run the code on a Ubuntu 18.04 or above machine using anaconda with the provided requirements to reproduce the results. 
 You can also download the saved model at [website]() to reproduce the results in the paper. After extracting the downloaded "save.zip", please place it at the same location of the scripts, run the code by:
 
-> $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'V' --reproduce True
+> $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'V' --graph-type 'gen' --reproduce True
 
 # Acknowledgment
 The author would like to thank Chengxuan Tong for checking the code
