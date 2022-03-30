@@ -17,7 +17,7 @@ LGGNet has three main functional blocks, the temporal learning block, the graph 
 # Prepare the python virtual environment
 Please create an anaconda virtual environment by:
 
-> $ conda create --name LGG
+> $ conda create --name LGG python=3.8
 
 Activate the virtual environment by:
 
