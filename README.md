@@ -1,12 +1,12 @@
 # LGGNet
 This is the PyTorch implementation of the LGG using [DEAP](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/) dataset in our paper:
 
-Yi Ding, Neethu Robinson, Qiuhao Zeng, Cuntai Guan, "LGGNet: Learning from Local-Global-Graph Representations for Brain-Computer Interface", under review of _**IEEE Transactions on Neural Networks and Learning Systems(TNNLS)**_, preprint available at [arXiv](https://arxiv.org/abs/2105.02786)
+Yi Ding, Neethu Robinson, Chengxuan Tong, Qiuhao Zeng, Cuntai Guan, "LGGNet: Learning from Local-Global-Graph Representations for Brain-Computer Interface", under minor revision of _**IEEE Transactions on Neural Networks and Learning Systems(TNNLS)**_, preprint available at [arXiv](https://arxiv.org/abs/2105.02786)
 
 It is a neurologically inspired graph neural network to learn local-global-graph representations from Electroencephalography (EEG) for a Brain-Computer Interface (BCI).
 # Network structure of LGGNet
 <p align="center">
-<img src="https://user-images.githubusercontent.com/83038743/159688807-458dabff-fd89-400a-bad4-e0510fd90671.png" width=800 align=center>
+<img src="https://user-images.githubusercontent.com/83038743/205667640-e3784e1b-4441-4c51-b269-3ce0417309b2.png" width=800 align=center>
 </p>
 
 <p align="center">
@@ -53,7 +53,7 @@ Please cite our paper if you use our code in your own work:
 ```
 @misc{ding2021lggnet,
       title={LGGNet: Learning from Local-Global-Graph Representations for Brain-Computer Interface}, 
-      author={Yi Ding and Neethu Robinson and Qiuhao Zeng and Cuntai Guan},
+      author={Yi Ding and Neethu Robinson and Chengxuan Tong and Qiuhao Zeng and Cuntai Guan},
       year={2021},
       eprint={2105.02786},
       archivePrefix={arXiv},
