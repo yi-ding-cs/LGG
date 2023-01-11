@@ -1,7 +1,7 @@
 # LGGNet
 This is the PyTorch implementation of the LGG using [DEAP](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/) dataset in our paper:
 
-Yi Ding, Neethu Robinson, Chengxuan Tong, Qiuhao Zeng, Cuntai Guan, "LGGNet: Learning from Local-Global-Graph Representations for Brain-Computer Interface", under minor revision of _**IEEE Transactions on Neural Networks and Learning Systems(TNNLS)**_, preprint available at [arXiv](https://arxiv.org/abs/2105.02786)
+Yi Ding, Neethu Robinson, Chengxuan Tong, Qiuhao Zeng, Cuntai Guan, "LGGNet: Learning from Local-Global-Graph Representations for Brain-Computer Interface", accepted as a regular paper in the _**IEEE Transactions on Neural Networks and Learning Systems(TNNLS)**_, preprint available at [arXiv](https://arxiv.org/abs/2105.02786)
 
 It is a neurologically inspired graph neural network to learn local-global-graph representations from Electroencephalography (EEG) for a Brain-Computer Interface (BCI).
 # Network structure of LGGNet
