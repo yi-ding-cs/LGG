@@ -1,5 +1,5 @@
 # LGGNet
-This is the PyTorch implementation of the LGG using [DEAP](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/) dataset in our paper:
+This is the PyTorch implementation of the LGGNet using [DEAP](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/) dataset in our paper:
 
 Yi Ding, Neethu Robinson, Chengxuan Tong, Qiuhao Zeng, Cuntai Guan, "LGGNet: Learning from Local-Global-Graph Representations for Brain-Computer Interface", accepted as a regular paper in the _**IEEE Transactions on Neural Networks and Learning Systems(TNNLS)**_, available at [IEEE Xplore](https://ieeexplore.ieee.org/document/10025569)
 
