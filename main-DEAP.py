@@ -35,7 +35,7 @@ if __name__ == '__main__':
     parser.add_argument('--gpu', default='0')
     parser.add_argument('--save-model', type=bool, default=True)
     ######## Model Parameters ########
-    parser.add_argument('--model', type=str, default='LGG')
+    parser.add_argument('--model', type=str, default='LGGNet')
     parser.add_argument('--pool', type=int, default=16)
     parser.add_argument('--pool-step-rate', type=float, default=0.25)
     parser.add_argument('--T', type=int, default=64)
