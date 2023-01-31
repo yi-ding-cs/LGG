@@ -13,7 +13,7 @@ It is a neurologically inspired graph neural network to learn local-global-graph
  Fig.1 LGGNet structure
 </p>
 
-LGGNet has two main functional blocks: the temporal learning block and the graph learning block. The temporal convolutional layer and the kernel-level attentive fusion layer are shown in the temporal learning block (A). The local and global graph-filtering layers are shown in the graph learning block (B). The temporal convolutional layer aims to learn dynamic temporal representations from EEG directly instead of human extracted features. The kernel-level attentive fusion layer will fuse the information learned by different temporal kernels to increase the learning capacity of LGGNet. The local graph-filtering layer learns the brain activities within each local region. Then the global graph-filtering layer with a trainable adjacency matrix will be applied to learn complex relations among different local regions. Four local graphs are shown in the figure for illustration purposes only. To know more about the detailed local-global-graph definitions please refer to our paper.
+LGGNet has two main functional blocks: the temporal learning block and the graph learning block. The temporal convolutional layer and the kernel-level attentive fusion layer are shown in the temporal learning block (A). The local and global graph-filtering layers are shown in the graph learning block (B). The temporal convolutional layer aims to learn dynamic temporal representations from EEG directly instead of human-extracted features. The kernel-level attentive fusion layer will fuse the information learned by different temporal kernels to increase the learning capacity of LGGNet. The local graph-filtering layer learns the brain activities within each local region. Then the global graph-filtering layer with a trainable adjacency matrix will be applied to learn complex relations among different local regions. Four local graphs are shown in the figure for illustration purposes only. To know more about the detailed local-global-graph definitions please refer to our paper.
 # Prepare the python virtual environment
 Please create an anaconda virtual environment by:
 
@@ -28,21 +28,21 @@ Install the requirements by:
 > $ pip3 install -r requirements.txt
 
 # Run the code
-Please download the DEAP dataset at [this website](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/). Please place the "data_preprocessed_python" folder at the same location of the script. To run the code for emotion (valence) classification, please type the following command in terminal:
+Please download the DEAP dataset at [this website](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/). Please place the "data_preprocessed_python" folder in the same location as the script. To run the code for the emotion (valence) classification, please type the following command in the terminal:
 
 > $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'V' --graph-type 'gen'
 
-To run the code for preference (liking) classification, please type the following command in terminal:
+To run the code for preference (liking) classification, please type the following command in the terminal:
 
 > $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'L' --graph-type 'hem'
 
 The results will be saved into "result_DEAP.txt" located at './save/result/'. 
 
 # Reproduce the results
-We highly suggest to run the code on a Ubuntu 18.04 or above machine using anaconda with the provided requirements to reproduce the results. 
-You can also download the saved model at [this website](https://drive.google.com/file/d/12lIbX6ti7cDCv3mVDY7TTd4QIc2cNEYE/view?usp=sharing) to reproduce the results in the paper. After extracting the downloaded "save.zip", please place it at the same location of the scripts, run the code by:
+We highly suggest running the code on a Ubuntu 18.04 or above machine using anaconda with the provided requirements to reproduce the results. 
+You can also download the saved model at [this website](https://drive.google.com/file/d/12lIbX6ti7cDCv3mVDY7TTd4QIc2cNEYE/view?usp=sharing) to reproduce the results in the paper. After extracting the downloaded "save.zip", please place it at the same location as the scripts, and run the code by:
 
-> $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'V' --graph-type 'gen' --reproduce True
+> $ python3 main-DEAP.py --data-path './data_preprocessed_python/' --label-type 'V' --graph-type 'gen' --reproduce
 
 # Cite
 Please cite our paper if you use our code in your own work:
