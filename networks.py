@@ -21,7 +21,7 @@ class PowerLayer(nn.Module):
         return torch.log(self.pooling(x.pow(2)))
 
 
-class LGG(nn.Module):
+class LGGNet(nn.Module):
     def temporal_learner(self, in_chan, out_chan, kernel, pool, pool_step_rate):
         return nn.Sequential(
             nn.Conv2d(in_chan, out_chan, kernel_size=kernel, stride=(1, 1)),
@@ -31,7 +31,7 @@ class LGG(nn.Module):
     def __init__(self, num_classes, input_size, sampling_rate, num_T,
                  out_graph, dropout_rate, pool, pool_step_rate, idx_graph):
         # input_size: EEG frequency x channel x datapoint
-        super(LGG, self).__init__()
+        super(LGGNet, self).__init__()
         self.idx = idx_graph
         self.window = [0.5, 0.25, 0.125]
         self.pool = pool
