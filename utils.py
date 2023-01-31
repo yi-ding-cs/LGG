@@ -73,11 +73,11 @@ def pprint(x):
 
 
 def get_model(args):
-    if args.model == 'LGG':
+    if args.model == 'LGGNet':
         idx_local_graph = list(np.array(h5py.File('num_chan_local_graph_{}.hdf'.format(args.graph_type), 'r')['data']))
         channels = sum(idx_local_graph)
         input_size = (args.input_shape[0], channels, args.input_shape[2])
-        model = LGG(
+        model = LGGNet(
             num_classes=args.num_class, input_size=input_size,
             sampling_rate=int(args.sampling_rate*args.scale_coefficient),
             num_T=args.T, out_graph=args.hidden,
