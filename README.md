@@ -64,8 +64,8 @@ If you are interested to apply LGGNet to other datasets, you can follow the belo
 from networks import LGGNet
 
 original_order = ['Fp1', 'AF3', 'F3', 'F7', 'FC5', 'FC1', 'C3', 'T7', 'CP5', 'CP1', 'P3', 'P7', 'PO3', 'O1', 'Oz',
-                      'Pz', 'Fp2', 'AF4', 'Fz', 'F4', 'F8', 'FC6', 'FC2', 'Cz', 'C4', 'T8', 'CP6', 'CP2', 'P4', 'P8',
-                      'PO4', 'O2']
+                  'Pz', 'Fp2', 'AF4', 'Fz', 'F4', 'F8', 'FC6', 'FC2', 'Cz', 'C4', 'T8', 'CP6', 'CP2', 'P4', 'P8',
+                  'PO4', 'O2']
 
 # Define proper channel orders for the local-global graphs in LGGNet. Please refer to three graph definitions (general, frontal, hemesphere).
 graph_general_DEAP = [['Fp1', 'Fp2'], ['AF3', 'AF4'], ['F3', 'F7', 'Fz', 'F4', 'F8'],
