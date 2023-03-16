@@ -9,9 +9,8 @@ DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 class PowerLayer(nn.Module):
     '''
-    The standard deviation layer: calculates the std of the data along given 'dim'
+    The power layer: calculates the log-transformed power of the data
     '''
-
     def __init__(self, dim, length, step):
         super(PowerLayer, self).__init__()
         self.dim = dim
