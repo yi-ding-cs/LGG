@@ -3,6 +3,7 @@ import torch
 import math
 import torch.nn as nn
 import torch.nn.functional as F
+import numpy as np
 from layers import GraphConvolution
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -165,9 +166,7 @@ class Aggregator():
 
     def get_idx(self, chan_in_area):
         idx = [0] + chan_in_area
-        idx_ = [0]
-        for i in idx:
-            idx_.append(idx_[-1] + i)
+        idx_ = [0] + np.cumsum(idx).tolist()
         return idx_[1:]
 
     def aggr_fun(self, x, dim):
